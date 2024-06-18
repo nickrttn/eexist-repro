@@ -27,8 +27,25 @@ importers:
         specifier: workspace:*
         version: link:../../packages/tooling-config
 
+  eexist-repro-submodule/packages/pkg-a:
+    dependencies:
+      submodule-tooling-config:
+        specifier: workspace:*
+        version: link:../tooling-config
+
+  eexist-repro-submodule/packages/pkg-b:
+    dependencies:
+      submodule-tooling-config:
+        specifier: workspace:*
+        version: link:../tooling-config
+
+  eexist-repro-submodule/packages/tooling-config: {}
+
   packages/pkg-a:
     dependencies:
+      submodule-tooling-config:
+        specifier: workspace:*
+        version: link:../../eexist-repro-submodule/packages/tooling-config
       tooling-config:
         specifier: workspace:*
         version: link:../tooling-config

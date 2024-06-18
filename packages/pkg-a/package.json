@@ -6,6 +6,7 @@
     "type-check": "echo \"Types checked!\""
   },
   "dependencies": {
-    "tooling-config": "workspace:*"
+    "tooling-config": "workspace:*",
+    "submodule-tooling-config": "workspace:*"
   }
 }
