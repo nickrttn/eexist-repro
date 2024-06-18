@@ -1,0 +1,3 @@
+[submodule "eexist-repro-submodule"]
+	path = eexist-repro-submodule
+	url = https://github.com/nickrttn/eexist-repro-submodule
